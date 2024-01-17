@@ -9,6 +9,8 @@ import { GeneratorComponent } from './pages/generator/generator.component';
 import { MyPasswordComponent } from './pages/my-password/my-password.component';
 import { AccountComponent } from './pages/account/account.component';
 import { NotFoundComponent } from './pages/not-found/not-found.component';
+import { HttpClientModule } from '@angular/common/http';
+
 
 @NgModule({
   declarations: [
@@ -22,7 +24,8 @@ import { NotFoundComponent } from './pages/not-found/not-found.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
