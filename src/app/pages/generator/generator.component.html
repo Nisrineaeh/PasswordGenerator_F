@@ -1,1 +1,6 @@
-<p>generator works!</p>
+<button (click)="generatePassword()">Générer un mot de passe</button>
+
+<div>
+  <h2>Password Généré :</h2>
+  <p *ngIf="password">{{ password.value }}</p>
+</div>

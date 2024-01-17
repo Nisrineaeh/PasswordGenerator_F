@@ -9,7 +9,7 @@ import { AccountComponent } from './pages/account/account.component';
 const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: "full" },
   { path: 'home', component: AccueilComponent },
-  { path: 'generator', component: GeneratorComponent},
+  { path: 'generateur', component: GeneratorComponent},
   { path: 'my-password', component: MyPasswordComponent},
   { path: 'my-account', component: AccountComponent},
   { path: '**', component: NotFoundComponent },

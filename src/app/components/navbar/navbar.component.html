@@ -1,34 +1,13 @@
-<nav class="menu" id="nav">
-	<span class="nav-item active">
-		<span class="icon">
-			<i data-feather="home"></i>
-		</span>
-		<a [routerLink]="['/home']">Accueil</a>
-	</span>
-	<span class="nav-item">
-		<span class="icon">
-			<i data-feather="search"></i>
-		</span>
-		<a [routerLink]="['/generator']">Générer mot de passe</a>
-	</span>
-	<span class="nav-item">
-		<span class="icon">
-			<!-- <span class="subicon">13</span> -->
-			<i data-feather="bell"></i>
-		</span>
-		<a [routerLink]="['/my-password']">Mes mots de passe</a>
-	</span>
-	<span class="nav-item">
-		<span class="icon">
-			<i data-feather="star"></i>
-		</span>
-		<a [routerLink]="['/my-account']">Mon compte</a>
-	</span>
-	<!-- <span class="nav-item">
-		<span class="icon">
-			<span class="subicon">1</span>
-			<i data-feather="bell"></i>
-		</span>
-		<a href="#">Your Profile</a>
-	</span> -->
-</nav>
+ <nav>
+      <input type="checkbox" id="check">
+      <label for="check" class="checkbtn">
+        <i class="fas fa-bars"></i>
+      </label>
+      <label class="logo">Password</label>
+      <ul>
+        <li><a class="active" [routerLink]="['/home']">Accueil</a></li>
+        <li><a [routerLink]="['/generateur']">Générateur</a></li>
+        <li><a [routerLink]="['/my-password']">Mes mots de passe</a></li>
+        <li><a [routerLink]="['/my-account']">Mon compte</a></li>
+      </ul>
+    </nav>
