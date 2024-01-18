@@ -1,9 +1,9 @@
 import { Password } from "./password";
 
 export interface User {
-    id: number;
+    id?: number;
     username: string;
     email: string;
     passwordHash: string;
-    passwords: Password[];
+    passwords?: Password[];
 }

@@ -10,6 +10,8 @@ import { MyPasswordComponent } from './pages/my-password/my-password.component';
 import { AccountComponent } from './pages/account/account.component';
 import { NotFoundComponent } from './pages/not-found/not-found.component';
 import { HttpClientModule } from '@angular/common/http';
+import { RegisterComponent } from './pages/register/register.component';
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -20,12 +22,14 @@ import { HttpClientModule } from '@angular/common/http';
     GeneratorComponent,
     MyPasswordComponent,
     AccountComponent,
-    NotFoundComponent
+    NotFoundComponent,
+    RegisterComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

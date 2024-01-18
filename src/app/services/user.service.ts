@@ -1,18 +1,17 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { Password } from '../models/password';
+import { User } from '../models/user';
 
 @Injectable({
   providedIn: 'root'
 })
-export class PasswordService {
+export class UserService {
 
   private apiUrl = 'http://localhost:8080/api';
 
   constructor(private http: HttpClient) { }
 
-   generatePassword(){
-    return this.http.get<Password>(`${this.apiUrl}/generatePassword`);
+  register(user: User) {
+    return this.http.post(`${this.apiUrl}/auth/register`, user);
   }
-
 }

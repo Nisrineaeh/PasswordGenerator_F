@@ -5,6 +5,7 @@ import { NotFoundComponent } from './pages/not-found/not-found.component';
 import { GeneratorComponent } from './pages/generator/generator.component';
 import { MyPasswordComponent } from './pages/my-password/my-password.component';
 import { AccountComponent } from './pages/account/account.component';
+import { RegisterComponent } from './pages/register/register.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: "full" },
@@ -12,6 +13,7 @@ const routes: Routes = [
   { path: 'generateur', component: GeneratorComponent},
   { path: 'my-password', component: MyPasswordComponent},
   { path: 'my-account', component: AccountComponent},
+  { path: 'register', component: RegisterComponent},
   { path: '**', component: NotFoundComponent },
 ];
 
