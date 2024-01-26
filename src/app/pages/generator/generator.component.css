@@ -1,3 +1,48 @@
-button{
+.display {
+    border: 1px solid #ddd;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px auto;
+    width: 80%;
+    max-width: 500px;
+    text-align: center;
+}
+
+h1 {
+    color: #333;
+    font-size: 1.4em;
+}
+
+h2 {
+    color: #666;
+    font-size: 1.2em;
+}
+
+p {
+    color: #444;
+    font-size: 1.1em;
+    word-break: break-all; 
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
     margin-top: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+@media (max-width: 768px) {
+    .display {
+        width: 90%;
+    }
 }

@@ -14,4 +14,6 @@ export class UserService {
   register(user: User) {
     return this.http.post(`${this.apiUrl}/auth/register`, user);
   }
+
+
 }

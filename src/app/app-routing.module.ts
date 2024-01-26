@@ -6,6 +6,7 @@ import { GeneratorComponent } from './pages/generator/generator.component';
 import { MyPasswordComponent } from './pages/my-password/my-password.component';
 import { AccountComponent } from './pages/account/account.component';
 import { RegisterComponent } from './pages/register/register.component';
+import { LoginComponent } from './pages/login/login.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: "full" },
@@ -14,6 +15,7 @@ const routes: Routes = [
   { path: 'my-password', component: MyPasswordComponent},
   { path: 'my-account', component: AccountComponent},
   { path: 'register', component: RegisterComponent},
+  { path: 'login', component: LoginComponent },
   { path: '**', component: NotFoundComponent },
 ];
 

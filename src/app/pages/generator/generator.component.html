@@ -1,6 +1,27 @@
-<button (click)="generatePassword()">Générer un mot de passe</button>
-
-<div>
+<div class="display">
+  <h1>Mot de passe de 12 caractères :</h1>
+  <button (click)="generatePassword()">Générer un mot de passe de 12 caracteres</button>
   <h2>Password Généré :</h2>
   <p *ngIf="password">{{ password.value }}</p>
+</div>
+
+<div class="display">
+  <h1>Mot de passe de 24 caractères :</h1>
+  <button (click)="generatePassword24()">Générer un mot de passe de 24 caracteres</button>
+  <h2>Password Généré :</h2>
+  <p *ngIf="password24">{{ password24.value }}</p>
+</div>
+
+<div class="display">
+  <h1>Mot de passe de 48 caractères :</h1>
+  <button (click)="generatePassword48()">Générer un mot de passe de 48 caracteres</button>
+  <h2>Password Généré :</h2>
+  <p *ngIf="password48">{{ password48.value }}</p>
+</div>
+
+<div class="display">
+  <h1>Mot de passe de 96 caractères :</h1>
+  <button (click)="generatePassword96()">Générer un mot de passe de 96 caracteres</button>
+  <h2>Password Généré :</h2>
+  <p *ngIf="password96">{{ password96.value }}</p>
 </div>
