@@ -35,6 +35,7 @@ export class LoginComponent implements OnInit {
         next: (response: any) => {
           if (response.access_token && response.user_id) {
             console.log('Connexion réussie et token stocké!');
+            alert(`Bienvenue ${username}, vous êtes bien connecté !`)
             setTimeout(() => {
               this.router.navigate(['/generateur']);
             }, 2000);

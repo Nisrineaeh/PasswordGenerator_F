@@ -44,6 +44,10 @@ button:hover {
     background-color: #0056b3;
 }
 
+.text{
+    margin:20px;
+}
+
 @media (max-width: 768px) {
     .display {
         width: 90%;
